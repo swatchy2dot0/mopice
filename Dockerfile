@@ -29,6 +29,11 @@ RUN set -ex \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         mopidy \
         mopidy-spotify \
+	mopidy-mpd \
+	mopidy-youtube \
+	mopidy-iris \
+	mopidy-local \
+	mopidy-tunein \
  && curl -L https://bootstrap.pypa.io/get-pip.py | python - \
  && pip install -U six \
  && pip install \
